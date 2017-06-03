@@ -115,7 +115,7 @@ Things get more complicated once the number of Algebras grows.
 Fortunately, Freestyle automatically aligns all those for you and gives you an already aligned `Coproduct` of all algebras
 contained by a Module, whether directly referenced or transitively through its modules dependencies.
 
-```tut:book
+```scala
 implicitly[App.Op[_] =:= ManualAppCoproduct[_]]
 ```
 
