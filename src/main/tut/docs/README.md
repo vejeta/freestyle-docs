@@ -25,13 +25,13 @@ addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.fu
 For Scala.jvm:
 
 ```scala
-libraryDependencies += "io.frees" %% "freestyle" % "0.1.1"
+libraryDependencies += "io.frees" %% "freestyle" % "0.2.0"
 ```
 
 For Scala.js:
 
 ```scala
-libraryDependencies += "io.frees" %%% "freestyle" % "0.1.1"
+libraryDependencies += "io.frees" %%% "freestyle" % "0.2.0"
 ```
 
 [comment]: # (End Replace)
