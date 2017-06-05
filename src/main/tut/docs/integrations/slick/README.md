@@ -19,7 +19,7 @@ import freestyle.implicits._
 import cats.implicits._
 ```
 
-And some imports for the _freestyle-slick_ module and doobie itself:
+And some imports for the _freestyle-slick_ module and slick itself:
 
 ```tut:silent
 import freestyle.slick._
