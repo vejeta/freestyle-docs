@@ -27,11 +27,12 @@ case class User(id: Long, name: String)
 This is similar to the simplified manual encoding below:
 
 ```tut:book
-import freestyle.{FreeS, EffectLike}
+import freestyle.FreeS
+import freestyle.internal.EffectLike
 
 case class User(id: Long, name: String)
 
-trait UserRepository[F[_]] extends freestyle.EffectLike[F] {
+trait UserRepository[F[_]] extends EffectLike[F] {
   def get(id: Long): FS[User]
   def save(user: User): FS[User]
   def getAll(filter: String): FS[List[User]]
