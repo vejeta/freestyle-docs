@@ -15,7 +15,7 @@ To declare an algebra in the Tagless final encoding, you need to depend on `free
 ## Dependencies
 
 ```scala
-addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
+addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M9" cross CrossVersion.full)
 ```
 
 [comment]: # (Start Replace)
