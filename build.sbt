@@ -13,6 +13,7 @@ lazy val docs = (project in file("."))
     name := "freestyle-docs",
     description := "Freestyle Docs and Microsite",
     orgScriptTaskListSetting := guard(scalaBinaryVersion.value == "2.12")("tut".asRunnableItem),
+    orgUpdateDocFilesSetting += baseDirectory.value / "src",
     orgAfterCISuccessTaskListSetting := List(
       orgUpdateDocFiles.asRunnableItem,
       depUpdateDependencyIssues.asRunnableItem
