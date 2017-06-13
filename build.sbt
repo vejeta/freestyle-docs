@@ -4,7 +4,7 @@ import sbtorgpolicies.runnable.syntax._
 
 lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.0")
 
-def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion) changing ()
+def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion)
 
 lazy val docs = (project in file("."))
   .settings(micrositeSettings: _*)
