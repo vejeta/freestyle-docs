@@ -2,7 +2,7 @@ import sbtorgpolicies.model._
 import sbtorgpolicies.templates.badges._
 import sbtorgpolicies.runnable.syntax._
 
-lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.2.0")
+lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.0")
 
 def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion) changing ()
 
@@ -29,7 +29,10 @@ lazy val docs = (project in file("."))
     )
   )
   .settings(
-    resolvers += Resolver.bintrayRepo("kailuowang", "maven"),
+    resolvers ++= Seq(
+      Resolver.mavenLocal,
+      Resolver.bintrayRepo("kailuowang", "maven")
+    ),
     libraryDependencies ++= Seq(
       %%("freestyle", fsVersion),
       fsDep("tagless"),
