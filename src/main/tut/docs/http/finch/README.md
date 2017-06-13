@@ -13,7 +13,7 @@ You can add the _freestyle-finch_ module as follows:
 [comment]: # (Start Replace)
 
 ```scala
-libraryDependencies += "io.frees" %% "freestyle-http-finch" % "0.2.0"
+libraryDependencies += "io.frees" %% "freestyle-http-finch" % "0.3.0"
 ```
 
 [comment]: # (End Replace)
