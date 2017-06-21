@@ -29,3 +29,6 @@ project/plugins/project/
 .DS_Store
 
 /secring.gpg
+
+# Layout and styling temporal files
+.sass-cache
