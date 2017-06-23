@@ -23,98 +23,52 @@ var basicTimeline = anime.timeline({
   // loop: true
 });
 
+var gdur = 1500
+
 basicTimeline
   .add({
     targets: '#freestyle-tag',
     translateY: (-20),
     opacity: 0,
-    duration: 500,
+    duration: gdur,
     easing: 'easeInCubic',
     elasticity: 500,
     offset: '-=300',
   })
   .add({
-    targets: '#pathOne',
-    translateX: (-15),
-    translateY: (-15),
-    opacity: 0,
-    duration: 500,
-    // loop: 2,
-    easing: 'easeInCubic',
-    elasticity: 500,
-    // direction: 'reverse',
-    offset: 100,
-  })
-  .add({
-    targets: '#pathThree',
+    targets: '.piece-top',
     translateX: (-40),
-    translateY: (-40),
+    translateY: (40, 20),
     opacity: 0,
-    duration: 500,
-    // loop: 2,
-    easing: 'easeInCubic',
-    elasticity: 500,
-    // direction: 'reverse',
-    offset: 150,
-  })
-  .add({
-    targets: '#pathFour',
-    translateX: (-60),
-    translateY: (-60),
-    opacity: 0,
-    duration: 500,
-    // loop: 2,
-    easing: 'easeInCubic',
-    elasticity: 500,
-    // direction: 'reverse',
-    offset: 250,
-  })
-  .add({
-    targets: '#pathSix',
-    translateX: (-10),
-    translateY: (10),
-    opacity: 0,
-    duration: 500,
+    duration: 1000,
     // loop: 2,
     easing: 'easeInCubic',
     elasticity: 500,
     // direction: 'reverse',
     offset: 300,
   })
+
   .add({
-    targets: '#pathTwo',
-    translateX: (-25),
-    translateY: (25),
-    opacity: 0,
-    duration: 500,
+    targets: '.piece-center',
+    opacity: 1,
+    duration: 400,
     // loop: 2,
     easing: 'easeInCubic',
     elasticity: 500,
     // direction: 'reverse',
-    offset: 450,
+    offset: 150,
   })
+
+
   .add({
-    targets: '#pathFive',
-    translateX: (-25),
-    translateY: (25),
+    targets: '.piece-bottom',
+    translateX: (40),
+    translateY: (-40, -20),
     opacity: 0,
-    duration: 500,
+    duration: 1200,
     // loop: 2,
     easing: 'easeInCubic',
     elasticity: 500,
     // direction: 'reverse',
-    offset: 550,
-  })
-  .add({
-    targets: '#pathSeven',
-    translateX: (25),
-    translateY: (25),
-    opacity: 0,
-    duration: 500,
-    // loop: 2,
-    easing: 'easeInCubic',
-    elasticity: 500,
-    // direction: 'reverse',
-    offset: 600,
-    duration: 800
+    offset: 300
   });
