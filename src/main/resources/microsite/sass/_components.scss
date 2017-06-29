@@ -121,3 +121,43 @@ a {
     display: flex;
     align-items: center;
 }
+// Sidebar
+
+#sidebar-wrapper {
+    background: $brand-secondary;
+
+    .sidebar-nav {
+        > .sidebar-brand {
+            a {
+                background: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            }
+        }
+
+        > li {
+            > a {
+                font-family: $font-family-header;
+            }
+        }
+
+        li {
+            a {
+                color: #fff;
+
+                &.active {
+                    color: $brand-primary;
+                }
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.07);
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
