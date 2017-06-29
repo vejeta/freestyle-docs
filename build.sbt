@@ -29,6 +29,7 @@ lazy val docs = (project in file("."))
       GitHubIssuesBadge.apply
     )
   )
+  .settings(scalaMetaSettings: _*)
   .settings(
     resolvers ++= Seq(
       Resolver.mavenLocal,
