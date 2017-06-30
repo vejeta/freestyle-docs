@@ -82,6 +82,7 @@ $gray-lighter: #F6F9FA;
 $white-color: #ffffff;
 
 $text-color: rgba($gray-dark, 0.7);
+$white-light: rgba(255, 255, 255, 0.07);
 
 
 // Typography
@@ -98,3 +99,7 @@ $base-timing: ease;
 
 // Shadow
 $base-shadow: 0 2px 0 0 rgba($brand-secondary, 0.08);
+
+// Border
+
+$border-light: 1px solid $white-light;

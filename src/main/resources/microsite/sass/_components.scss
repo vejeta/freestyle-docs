@@ -130,13 +130,39 @@ a {
         > .sidebar-brand {
             a {
                 background: none;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
         }
 
         > li {
+            margin-bottom: 0;
+            border-bottom: $border-light;
+
             > a {
                 font-family: $font-family-header;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+
+            .sub_section {
+                border-top: $border-light;
+                padding: 20px 0;
+
+                li {
+                    border-left: $border-light;
+                    margin-left: 24px;
+
+                    &:before {
+                        content: "–";
+                        position: absolute;
+                        color: $white-light;
+                    }
+
+                    a {
+                        padding-left: 18px;
+                    }
+                }
             }
         }
 
@@ -146,18 +172,37 @@ a {
 
                 &.active {
                     color: $brand-primary;
+                    border-left: 0;
                 }
 
                 &:hover {
-                    background: rgba(255, 255, 255, 0.07);
+                    background: $white-light;
                 }
             }
 
             ul {
                 li {
                     font-size: 14px;
+                    line-height: 2.1;
                 }
             }
         }
+    }
+}
+
+body {
+    &.docs {
+        background: $gray-lighter;
+    }
+}
+
+#page-content-wrapper {
+    section {
+        background: none;
+        padding: 0;
+    }
+
+    .nav {
+        box-shadow: $base-shadow;
     }
 }
