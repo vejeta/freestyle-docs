@@ -2,7 +2,7 @@ import sbtorgpolicies.model._
 import sbtorgpolicies.templates.badges._
 import sbtorgpolicies.runnable.syntax._
 
-lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.0")
+lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.1")
 
 def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion)
 
