@@ -25,13 +25,13 @@ addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M9" cross CrossVersion.f
 For Scala.jvm:
 
 ```scala
-libraryDependencies += "io.frees" %% "freestyle" % "0.3.0"
+libraryDependencies += "io.frees" %% "freestyle" % "0.3.1"
 ```
 
 For Scala.js:
 
 ```scala
-libraryDependencies += "io.frees" %%% "freestyle" % "0.3.0"
+libraryDependencies += "io.frees" %%% "freestyle" % "0.3.1"
 ```
 
 [comment]: # (End Replace)

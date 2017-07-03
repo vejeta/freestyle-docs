@@ -14,7 +14,7 @@ In order to enable this integration, you can depend on _freestyle-logging_:
 [comment]: # (Start Replace)
 
 ```scala
-libraryDependencies += "io.frees" %% "freestyle-logging" % "0.3.0"
+libraryDependencies += "io.frees" %% "freestyle-logging" % "0.3.1"
 ```
 
 [comment]: # (End Replace)
