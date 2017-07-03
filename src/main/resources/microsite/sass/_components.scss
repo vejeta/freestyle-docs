@@ -41,6 +41,10 @@ a {
 
     h1 {
         font-size: $jumbotron-heading-font-size;
+
+        @media (max-width: 992px) {
+            font-size: ($jumbotron-heading-font-size / 1.5);
+        }
     }
 
     p {
@@ -87,12 +91,30 @@ a {
             background: #fff;
             box-shadow: $base-shadow;
         }
+
+        @media (max-width: 992px) {
+            .feature-handlers,
+            .feature-modules {
+                margin-top: 20px;
+            }
+        }
     }
 
     #libraries {
+
         .libraries-lines {
             margin: 48px 0 24px;
             text-align: center;
+
+            @media (max-width: 1200px) {
+                img {
+                    width: 76%;
+                    height: auto;
+                }
+            }
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
 
         a {
@@ -121,6 +143,10 @@ a {
                     text-transform: uppercase;
                     font-size: 12px;
                     transition: all $base-duration $base-timing;
+                }
+
+                @media (max-width: 992px) {
+                    margin-top: 48px;
                 }
             }
 
