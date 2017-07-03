@@ -21,7 +21,7 @@ h6 {
 }
 
 a {
-    transition: color $base-duration $base-timing;
+    transition: all $base-duration $base-timing;
 }
 // Buttons
 
@@ -35,7 +35,6 @@ a {
     }
 }
 // Jumbotron
-
 .jumbotron {
     text-align: center;
     background: url("../img/freestyle-background-jumbotron.svg") center center no-repeat $brand-secondary;
@@ -67,7 +66,6 @@ a {
     }
 }
 // Site  main
-
 #site-main {
     padding-bottom: 80px;
     background: $gray-lighter;
@@ -97,18 +95,49 @@ a {
             text-align: center;
         }
 
-        .library-cassandra,
-        .library-effects,
-        .library-kafka,
-        .library-rpc {
-            text-align: center;
+        a {
+            .library-cassandra,
+            .library-effects,
+            .library-kafka,
+            .library-rpc {
+                text-align: center;
 
-            h3 {
-                font-size: 17px;
+                h3 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: rgba($brand-secondary, 0.7);
+                }
+
+                .cta-library {
+                    background: $brand-primary;
+                    color: #fff;
+                    padding: 2px 12px 1px 12px;;
+                    margin-bottom: 0;
+                    display: inline-block;
+                    font-family: $font-family-header;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    transition: all $base-duration $base-timing;
+                }
             }
 
-            p {
-                font-size: 14px;
+            img {
+                transition: all $base-duration $base-timing;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                img {
+                    transform: scale(1.2);
+                }
+
+                .cta-library {
+                    background: darken($brand-primary, 7%);
+                }
             }
         }
     }
@@ -121,7 +150,12 @@ a {
     display: flex;
     align-items: center;
 }
-// Sidebar
+// Doc
+body {
+    &.docs {
+        background: $gray-lighter;
+    }
+}
 
 #sidebar-wrapper {
     background: $brand-secondary;
@@ -150,17 +184,22 @@ a {
                 padding: 20px 0;
 
                 li {
-                    border-left: $border-light;
+                    border-left: 1px solid rgba(255, 255, 255, 0.15);
                     margin-left: 24px;
 
                     &:before {
                         content: "–";
                         position: absolute;
-                        color: $white-light;
+                        color: rgba(255, 255, 255, 0.15);
                     }
 
                     a {
                         padding-left: 18px;
+
+                        &:hover {
+                            background: none;
+                            color: rgba(255, 255, 255, 0.5);
+                        }
                     }
                 }
             }
@@ -190,19 +229,35 @@ a {
     }
 }
 
-body {
-    &.docs {
-        background: $gray-lighter;
-    }
-}
-
 #page-content-wrapper {
     section {
         background: none;
         padding: 0;
+
+        p {
+            color: rgba($brand-secondary, 0.7);
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        pre {
+            background: rgba($brand-secondary, 0.05);
+            margin-bottom: 30px;
+            border: none;
+        }
     }
 
     .nav {
         box-shadow: $base-shadow;
     }
+}
+
+.modal-kazari {
+    display: none;
 }
