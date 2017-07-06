@@ -284,6 +284,12 @@ body {
     }
 }
 
+
+code,
+pre {
+    font-family: $font-family-header;
+}
+
 .modal-kazari {
     display: none;
 }
