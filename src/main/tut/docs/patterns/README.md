@@ -1,5 +1,5 @@
 ---
-layout: fs-docs
+layout: docs
 title: Patterns
 permalink: /docs/patterns/
 ---
