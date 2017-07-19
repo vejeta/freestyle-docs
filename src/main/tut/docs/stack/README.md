@@ -109,7 +109,7 @@ import cats.data.OptionT
 
 def getCustomer[F[_]](id: CustomerId)(implicit app: App[F]): FreeS[F, Option[Customer]] =
   // first try to get the customer from the cache
-  OptionT(app.cacheM.get(id).freeS).orElseF {
+  OptionT[FreeS[F, ?], Customer](app.cacheM.get(id).freeS).orElseF {
     // otherwise fallback and get the customer from a persistent store http://typelevel.org/cats/datatypes/optiont.html
     for {
       customer <- app.persistence.customer.getCustomer(id).freeS
