@@ -11,7 +11,6 @@ The maintainers of the project are:
 These are the people that have contributed to the freestyle-docs project:
 
 * Adrián Ramírez Fornell <[AdrianRaFo](https://github.com/AdrianRaFo)>
-* Andy Scott <[andyscott](https://github.com/andyscott)>
 * Diego Esteban Alonso Blas <[diesalbla](https://github.com/diesalbla)>
 * Domingo Valera <[dominv](https://github.com/dominv)>
 * Francisco Diaz <[franciscodr](https://github.com/franciscodr)>
@@ -24,4 +23,6 @@ These are the people that have contributed to the freestyle-docs project:
 * Peter Neyens <[peterneyens](https://github.com/peterneyens)>
 * Raúl Raja Martínez <[raulraja](https://github.com/raulraja)>
 * Sho Kohara <[shokohara](https://github.com/shokohara)>
+* Simon Morgan <[simon-morgan](https://github.com/simon-morgan)>
 * Suhas Gaddam <[suhasgaddam](https://github.com/suhasgaddam)>
+* andy scott <[andyscott](https://github.com/andyscott)>
