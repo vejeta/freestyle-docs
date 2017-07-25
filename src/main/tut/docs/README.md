@@ -42,7 +42,7 @@ Freestyle's core feature is the definition of `Free` boilerplate-free algebras t
 
 In the example below, we will define two algebras with intermixed sequential and parallel computations.
 
-```tut:book
+```tut:silent:decorate(.kazari-id-1)
 import freestyle._
 import freestyle.implicits._
 
@@ -63,7 +63,7 @@ Learn more about [algebras](./core/algebras) in the extended documentation.
 
 Freestyle algebras can be combined into `@module` definitions which provide aggregation and unification over the parameterization of Free programs.
 
-```tut:book
+```tut:silent:decorate(.kazari-id-1)
 @module trait Application {
   val validation: Validation
   val interaction: Interaction
@@ -82,7 +82,7 @@ Abstract definitions are all it takes to start building programs that support se
 
 The example below combines both algebras to produce a more complex program:
 
-```tut:book
+```tut:silent:decorate(.kazari-id-1)
 def program[F[_]](implicit A: Application[F]) = {
   import A._
   import cats.implicits._
@@ -102,7 +102,7 @@ def program[F[_]](implicit A: Application[F]) = {
 
 In order to run programs, we need interpreters. We define interpreters providing implementations for the operations defined in our algebras:
 
-```tut:book
+```tut:silent:decorate(.kazari-id-1)
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -121,7 +121,7 @@ The mere fact that you provide implicit evidences for the individual steps enabl
 
 At this point, we can run our pure programs at the edge of the world:
 
-```tut:book
+```tut:silent:decorate(.kazari-id-1)
 import cats.implicits._
 import scala.concurrent.duration.Duration
 import scala.concurrent.Await

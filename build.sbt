@@ -1,8 +1,9 @@
+import microsites.KazariDependency
 import sbtorgpolicies.model._
-import sbtorgpolicies.templates.badges._
 import sbtorgpolicies.runnable.syntax._
+import sbtorgpolicies.templates.badges._
 
-lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.0")
+lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.1")
 
 def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion)
 
@@ -29,6 +30,20 @@ lazy val docs = (project in file("."))
       GitHubIssuesBadge.apply
     )
   )
+  .settings(
+    micrositeKazariDependencies := Seq(
+      KazariDependency(
+        groupId = "org.scalameta",
+        artifactId = "paradise",
+        scalaVersion = "2.12.2",
+        version = "3.0.0-M9"),
+      KazariDependency(
+        groupId = "io.frees",
+        artifactId = "freestyle",
+        scalaVersion = "2.12",
+        version = "0.3.1")),
+    micrositeKazariResolvers := Seq("https://oss.sonatype.org/content/repositories/releases"))
+  .settings(scalaMetaSettings: _*)
   .settings(
     resolvers ++= Seq(
       Resolver.mavenLocal,
