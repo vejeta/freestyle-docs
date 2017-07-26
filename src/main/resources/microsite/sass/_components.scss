@@ -180,6 +180,15 @@ a {
 body {
     &.docs {
         background: $gray-lighter;
+
+        .compiler-kazari {
+            &.compiler-kazari-background {
+                background: $brand-secondary !important;
+            }
+
+            margin-bottom: 50px;
+        }
+
     }
 }
 
@@ -273,7 +282,7 @@ body {
         }
 
         pre {
-            margin-bottom: 30px;
+            margin-bottom: 0;
             border: none;
             font-size: 18px;
         }
@@ -288,8 +297,4 @@ body {
 code,
 pre {
     font-family: $font-family-header;
-}
-
-.modal-kazari {
-    display: none;
 }

@@ -1138,6 +1138,10 @@ a {
 
 body.docs {
   background: #F6F9FA; }
+  body.docs .compiler-kazari {
+    margin-bottom: 50px; }
+    body.docs .compiler-kazari.compiler-kazari-background {
+      background: #102A44 !important; }
 
 #sidebar-wrapper {
   background: #102A44; }
@@ -1188,7 +1192,7 @@ body.docs {
   #page-content-wrapper section h3 {
     font-size: 22px; }
   #page-content-wrapper section pre {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     border: none;
     font-size: 18px; }
 #page-content-wrapper .nav {
@@ -1197,6 +1201,3 @@ body.docs {
 code,
 pre {
   font-family: "pragmatapro", sans-serif; }
-
-.modal-kazari {
-  display: none; }
