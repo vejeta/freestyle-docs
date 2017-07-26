@@ -1108,7 +1108,7 @@ a {
     #site-main #libraries a .library-rpc .cta-library {
       background: #01C2C2;
       color: #fff;
-      padding: 2px 12px 1px 12px;
+      padding: 2px 12px 1px;
       margin-bottom: 0;
       display: inline-block;
       font-family: "pragmatapro", sans-serif;
@@ -1138,10 +1138,12 @@ a {
 
 body.docs {
   background: #F6F9FA; }
-  body.docs .compiler-kazari {
-    margin-bottom: 50px; }
-    body.docs .compiler-kazari.compiler-kazari-background {
-      background: #102A44 !important; }
+  body.docs .kazari-id-1 {
+    margin-bottom: 40px; }
+  body.docs .modal-kazari {
+    margin-top: 0; }
+  body.docs .compiler-kazari.compiler-kazari-background {
+    background: #102A44 !important; }
 
 #sidebar-wrapper {
   background: #102A44; }
