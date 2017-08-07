@@ -1200,3 +1200,6 @@ pre {
 
 .modal-kazari {
   display: none; }
+  
+.indirect-injection, .gitter-open-chat-button, .scroll-injection {
+  opacity: 0; }
