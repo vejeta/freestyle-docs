@@ -35,8 +35,8 @@ lazy val docs = (project in file("."))
       KazariDependency(
         groupId = "org.scalameta",
         artifactId = "paradise",
-        scalaVersion = "2.12.2",
-        version = "3.0.0-M9"),
+        scalaVersion = "2.12.3",
+        version = "3.0.0-M10"),
       KazariDependency(
         groupId = "io.frees",
         artifactId = "freestyle",
