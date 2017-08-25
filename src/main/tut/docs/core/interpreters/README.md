@@ -67,11 +67,11 @@ implicit def manualKvStoreHandler: KVStore.Op ~> KVStoreState =
   new (KVStore.Op ~> KVStoreState) {
     def apply[A](fa: KVStore.Op[A]): KVStoreState[A] =
       fa match {
-        case KVStore.PutOP(key, value) =>
+        case KVStore.PutOp(key, value) =>
           State.modify(_.updated(key, value))
-        case KVStore.GetOP(key) =>
+        case KVStore.GetOp(key) =>
           State.inspect(_.get(key).map(_.asInstanceOf[A]))
-        case KVStore.DeleteOP(key) =>
+        case KVStore.DeleteOp(key) =>
           State.modify(_ - key)
       }
 }

@@ -2,9 +2,9 @@ import sbtorgpolicies.model._
 import sbtorgpolicies.templates.badges._
 import sbtorgpolicies.runnable.syntax._
 
-lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.1")
+lazy val fsVersion = Option(sys.props("frees.version")).getOrElse("0.3.2-SNAPSHOT")
 
-def fsDep(suffix: String): ModuleID = %%(s"freestyle-$suffix", fsVersion)
+def fsDep(suffix: String): ModuleID = "io.frees" %% s"frees-$suffix" % fsVersion
 
 lazy val docs = (project in file("."))
   .settings(micrositeSettings: _*)
@@ -36,7 +36,7 @@ lazy val docs = (project in file("."))
       Resolver.bintrayRepo("kailuowang", "maven")
     ),
     libraryDependencies ++= Seq(
-      %%("freestyle", fsVersion),
+      fsDep("core"),
       fsDep("tagless"),
       fsDep("effects"),
       fsDep("async"),
