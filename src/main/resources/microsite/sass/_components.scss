@@ -54,6 +54,10 @@ a {
     .jumbotron-stars {
         font-size: 20px;
 
+        .fa {
+            margin-right: 8px;
+        }
+
         a {
             &:hover {
                 text-decoration: none;
