@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Handlers
-permalink: /docs/core/interpreters/
+permalink: /docs/core/handlers/
 ---
 
 # Handlers

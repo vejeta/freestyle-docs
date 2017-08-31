@@ -8,6 +8,6 @@ permalink: /docs/core/
 
 * [Algebras](./algebras/)
 * [Modules](./modules/)
-* [Handlers](./interpreters/)
+* [Handlers](handlers/)
 * [Parallelism](./parallelism/)
 * [Tagless Final](./tagless/)
